@@ -1,0 +1,36 @@
+@media (max-width: 480px) {
+  .Toastify__toast {
+    position: fixed;
+    top: 71px;
+    right: 10px;
+    font-size: 12px;
+    padding: 10px;
+    width: 60%; 
+    border-radius: 10px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .Toastify__toast {
+    position: fixed;
+    top: 71px;
+    right: 10px;
+    font-size: 14px; 
+    padding: 12px; 
+    width: 40%;     
+  }
+}
+
+
+@media (min-width: 769px) {
+  
+  .Toastify__toast {
+    position: fixed;
+    top: 71px;
+    right: 10px;
+    font-size: 16px; 
+    padding: 16px; 
+    width:25vw; 
+  }
+}
+

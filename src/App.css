@@ -1,38 +1,203 @@
-.App {
-  text-align: center;
+@import 'material-icons/iconfont/material-icons.css';
+
+* {
+    margin: 0px;
+    padding: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.app {
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.outlet {
+    width: 100%;
+    height: calc(100vh - 70px);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+table,
+th,
+td {
+    border: 1px solid rebeccapurple;
+    border-collapse: collapse;
+    text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+th,
+td {
+    padding: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+table {
+    width: 100%;
+}
+
+.home {
+    width: 80%;
+    margin: auto;
+}
+
+
+.navbar {
+    width: 100%;
+    background-color: white;
+    height: 70px;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    nav {
+        display: flex;
+        gap: 20px;
+
+        .link {
+            width: 100px;
+            text-decoration: none;
+            padding: 5px 10px;
+            text-align: center;
+            color: black;
+            border-radius: 5px;
+        }
+
+        .link:hover {
+            background-color: rgb(194, 194, 194);
+        }
+
+        .active-link {
+            background-color: rgb(208, 208, 208);
+        }
+    }
+}
+
+.create-btn {
+    padding-top: 30px;
+
+    button {
+        border: none;
+        background-color: blue;
+        padding: 10px 20px;
+        border-radius: 10px;
+        color: white;
+        font-size: 700;
+        cursor: pointer;
+    }
+}
+
+.edit-btn {
+    box-sizing: border-box;
+    border: none;
+    background-color: gray;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.delete-btn {
+    box-sizing: border-box;
+    border: none;
+    background-color: red;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width : 480px) {
+    .home {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+    }
+
+    table {
+        width: 95%;
+        height: fit-content;
+        margin: auto;
+        box-sizing: border-box;
+    }
+
+    th,
+    td {
+        padding: 5px 0px;
+        font-size: 10px;
+        box-sizing: border-box;
+    }
+
+    .edit-btn {
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    .delete-btn {
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    .create-btn {
+        padding-top: 15px;
+        width: 95%;
+        margin: auto;
+
+        button {
+            padding: 5px 20px;
+        }
+    }
+
+}
+
+
+@media only screen and (min-width : 481px) and (max-width : 768px) {
+    .home {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+    }
+
+    table {
+        width: 95%;
+        height: fit-content;
+        margin: auto;
+        box-sizing: border-box;
+    }
+
+    th,
+    td {
+        padding: 5px 0px;
+        font-size: 10px;
+        box-sizing: border-box;
+    }
+
+    .edit-btn {
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    .delete-btn {
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    .create-btn {
+        padding-top: 15px;
+        width: 95%;
+        margin: auto;
+
+        button {
+            padding: 5px 20px;
+        }
+    }
+
 }
